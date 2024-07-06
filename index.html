@@ -1,0 +1,1326 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="HTML">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+
+    a {
+      color: #1772d0;
+      text-decoration: none;
+    }
+
+    a:focus,
+    a:hover {
+      color: #f09228;
+      text-decoration: none;
+    }
+
+    body,
+    td,
+    th,
+    tr,
+    p,
+    a {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      /* background-color: #DBEBF4; */
+    }
+
+    strong {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    heading {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 22px;
+    }
+
+    papertitle {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 700
+    }
+
+    name {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 32px;
+    }
+
+    .one {
+      width: 160px;
+      height: 160px;
+      position: relative;
+    }
+
+    .two {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+
+    .fade {
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+
+    span.highlight {
+      background-color: #ffffd0;
+    }
+
+
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+        font-family: 'Lato', Verdana, Helvetica, sans-serif;
+        font-size: 22px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  </style>
+  <!--<link rel="icon" type="image/png" href="images_new/seal_icon.png">-->
+  <title>Stefano Rosa's Website</title>
+
+
+<body>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#projects">Projects</a>
+  </div>
+
+  <span style="font-size:22px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+
+
+  <script>
+  function openNav() {
+  document.getElementById("mySidenav").style.width = "200px";
+  document.getElementById("main").style.marginLeft = "200px";
+  }
+
+  function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+
+<div id="main">
+    <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+    <tr>
+      <td>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="70%" valign="middle">
+              <p align="center">
+                <name>Stefano Rosa</name>
+              </p>
+              <p>I do research in <strong>Robotics and Artificial Intelligence</strong> at <a href="http://www.iit.it/">Istituto Italiano di Tecnologia</a> (IIT), in the <a href="https://hsp.iit.it/it/home">Humanoid Sensing and Perception lab</a>, with <a href="https://www.iit.it/it/people-details/-/people/lorenzo-natale">Lorenzo Natale.</a>
+              </p>
+              <p>
+              My research interests include localization and mapping for mobile robotics, computer vision and ML applied to robot navigation, and human-robot interaction. I also have an interest in vision-based assistive technologies.
+              </p>
+              <p>
+              I was research fellow at <a href="http://www.cs.ox.ac.uk/">University of Oxford</a> (UK), under supervision of <a href="http://www.cs.ox.ac.uk/people/niki.trigoni/">Prof. Niki Trigoni</a>, working on the ESPRC Programme Grant "Mobile Robotics: Enabling a Pervasive Technology of the Future".
+              I was assistant researcher at <a href="http://www.polito.it/">Politecnico di Torino</a> (Italy), working in collaboration with Telecom Italia S.P.A.
+              I was a PhD student in Robotics at <a href="http://www.iit.it/">Istituto Italiano di Tecnologia</a> (IIT) and Politecnico di Torino, working on space robotics and service robotics.
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:rosa.stefano@gmail.com">Email</a> &nbsp/&nbsp
+                <a href="Stefano.Rosa.cv.2022.pdf">CV</a> &nbsp/&nbsp
+                <a href="https://scholar.google.co.uk/citations?user=UPiD6Q0AAAAJ&hl=it">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/stefano-rosa-2396b2b/"> LinkedIn </a> &nbsp/&nbsp
+                <!-- <a href="https://twitter.com/morpheus1820"> Twitter </a> &nbsp/&nbsp -->
+                <a href="https://www.github.com/morpheus1820"> GitHub </a>
+
+              </p>
+            </td>
+            <td width="30%">
+              <img src="images_new/profile_photo_alpha.png" height="200px">
+            </td>
+          </tr>
+        </table>
+
+<hr>
+
+        <a name="research"></a>
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tr>
+            <td width="100%" valign="middle">
+              <heading>Research</heading>
+              <p>
+              <b>Spatial AI</b>:
+              Situational awareness requires autonomous agents to build and maintain a multi-layered model of the environment, including both a geometric model (useful for navigation and coordination) and a semantic level (useful to execute high-level tasks and to provide more succinct information to human operators). 
+              I work on using human experiences to improve semantic understanding of the environment for mobile assistive robots.
+              </p>
+              <p>
+              <b>Generative Visual Models and Intuitive Physics Understanding</b>:
+              My research tries to bring common sense understanding to robotic perception.
+
+              Interacting with the environment requires to perceive objects and understand how actions influence their movement ad shape.
+              Generative perception models can make sense of partial and noisy observations and reconstruct their shape and semantics.
+
+              On the other hand, understanding the intuitive physics of objects interacting with each other will provide next-generation AI agents with a common sense knowledge base that will enable human-level interaction with a complex, dynamical environment.
+              </p>
+              <p>
+              <b>Interpretable Sensor Fusion:</b>
+              Recent developments in machine learning have made possible to learn end-to-end motion estimation from visual, inertial and ranging devices. I study reasoned ways to learn sensor fusion strategies in deep VIO frameworks. At the same time, I study how to integrate novel sensor modalities such as millimeter wave radar and thermal imaging into a single framework.
+              </p>
+           
+            </td>
+          </tr>
+        </table>
+
+<!--         <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>News</heading>
+              <ul style="list-style-type:disc;">
+                <li>May 2020: Invited Talk at <a href="http://iit.it">Italian Institute of Technology (IIT)</a></li>             
+                <li>Mar 2020: 1 paper accepted at MobiSys 2020</li>
+                <li>Feb 2020: 1 paper accepted at CVPR 2020 (oral)</li>
+                <li>Jan 2020: 1 paper accepted at IEEE Robotics and Automation Letters / ICRA 2020</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+-->
+<!--         <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20"> -->
+<!--           <tr> -->
+<!--             <td width="100%" valign="middle"> -->
+<!--               <heading>Preprints</heading> -->
+<!--             </td> -->
+<!--           </tr> -->
+<!--         </table> -->
+<!--  -->
+<!--         <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20"> -->
+<!--           <tr bgcolor=""> -->
+<!--             <td width="25%"> -->
+<!--               <img src='images_new/teaser5.jpg' width="200px"> -->
+<!--             </td> -->
+<!--             <td valign="top" width="75%"> -->
+<!--               <p> -->
+<!--                 <papertitle>Mind the Error! Detection and Localization of Instruction Errors in Vision-and-Language Navigation</papertitle> -->
+<!--               </p> -->
+<!--               Francesco Taioli, Stefano Rosa, Alberto Castellini, Lorenzo Natale, Alessio Del Bue, Alessandro Farinelli, Marco Cristani, Yiming Wang -->
+<!--               <br> -->
+<!--             <br> -->
+<!--             <a href="https://intelligolabs.github.io/R2RIE-CE/">[Web]</a> -->
+<!--             <a href="https://arxiv.org/abs/2403.10700">[ArXiv]</a>    -->
+<!--             <p> -->
+<!--               We propose a benchmark dataset that introduces various types of instruction errors considering potential human causes. This benchmark provides insight into the robustness of VLN systems in continuous environments. -->
+<!--             </p> -->
+<!--             </td> -->
+<!--           </tr> -->
+<!--       </table> -->
+
+      
+<!--         <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20"> -->
+<!--  -->
+<!--           <tr bgcolor=""> -->
+<!--             <td width="25%"> -->
+<!--               <img src='images_new/framework_overview_tpami.jpg' width="200px"> -->
+<!--             </td> -->
+<!--             <td valign="top" width="75%"> -->
+<!--               <p> -->
+<!--                 <papertitle>SelectFusion: A Generic Framework to Selectively Learn Multisensory Fusion</papertitle> -->
+<!--               </p> -->
+<!--               <a href="http://www.cs.ox.ac.uk/people/changhao.chen/">Changhao Chen</a>, -->
+<!--               Stefano Rosa, -->
+<!--               <a href="http://www.cs.ox.ac.uk/people/xiaoxuan.lu/">Chris Xiaoxuan Lu</a>, -->
+<!--               <a href="http://www.cs.ox.ac.uk/people/niki.trigoni/">Niki Trigoni</a>, -->
+<!--               <a href="http://www.cs.ox.ac.uk/people/andrew.markham/">Andrew Markham</a> -->
+<!--               <br> -->
+<!--               <strong>arXiv:1912.13077</strong> -->
+<!--               <br> -->
+<!--               <a href="https://arxiv.org/abs/1912.13077">[PDF]</a> -->
+<!--               <p> We build a generic deep framework for state estimation from multiple sensor modalities, based on selective fusion of sensor streams. We show how selective fusion can help to increase robustness to noisy and misaligned data.</p> -->
+<!--               </td> -->
+<!--           </tr> -->
+<!--         </table> -->
+<!-- <hr> -->
+        <!-- <a name="preprints"></a> -->
+        <!-- <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20"> -->
+        <!--   <tr> -->
+        <!--     <td width="100%" valign="middle"> -->
+        <!--       <heading>Preprints</heading> -->
+        <!--     </td> -->
+        <!--   </tr> -->
+        <!-- </table> -->
+        <!-- <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20"> -->
+        <!--           <tr> -->
+        <!--             <td width="100%" valign="middle"> -->
+        <!--               <heading>2022</heading> -->
+        <!--             </td> -->
+        <!--           </tr> -->
+        <!-- </table> -->
+
+<!--          <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20"> -->
+<!--           <tr bgcolor=""> -->
+<!--             <td width="25%"> -->
+<!--               <img src='images_new/fig1_hd.jpg' width="200px"> -->
+<!--             </td> -->
+<!--             <td valign="top" width="75%"> -->
+<!--               <p> -->
+<!--                 <papertitle>Look around and learn: self-improving object detection by exploration</papertitle> -->
+<!--               </p> -->
+<!--               Gianluca Scarpellini, -->
+<!--               Stefano Rosa, -->
+<!--               Pietro Morerio, Lorenzo Natale, Alessio del Bue -->
+<!--               <br> -->
+<!--             <br> -->
+<!--             <a href="https://arxiv.org/abs/2302.03566">[ArXiv]</a> -->
+<!--             <p> -->
+<!--               We teach an embodied agent to look for disagreement in detected objects, in order to collect samples for fine-tuning an off-the-shelf detector. -->
+<!--             </p> -->
+<!--             </td> -->
+<!--           </tr> -->
+<!--       </table> -->
+<!--  -->
+<!--         <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20"> -->
+<!--           <tr bgcolor=""> -->
+<!--             <td width="25%"> -->
+<!--               <img src='images_new/triplet_full.jpg' width="200px"> -->
+<!--             </td> -->
+<!--             <td valign="top" width="75%"> -->
+<!--               <p> -->
+<!--                 <papertitle>Self-improving object detection via disagreement reconciliation</papertitle> -->
+<!--               </p> -->
+<!--               Gianluca Scarpellini, -->
+<!--               Stefano Rosa, -->
+<!--               Pietro Morerio, Lorenzo Natale, Alessio del Bue -->
+<!--               <br> -->
+<!--             <br> -->
+<!--             <a href="https://arxiv.org/abs/2302.10624">[ArXiv]</a> -->
+<!--             <p> -->
+<!--               This work studies how to automatically fine-tune a pre-trained off-the-shelf object detector while exploring a new environment. -->
+<!--             </p> -->
+<!--             </td> -->
+<!--           </tr> -->
+<!--       </table> -->
+
+
+
+        <a name="publications"></a>
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>Publications</heading>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+                  <tr>
+                    <td width="100%" valign="middle">
+                      <heading>2024</heading>
+                    </td>
+                  </tr>
+        </table>
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+
+          <tr bgcolor="">
+            <td width="25%">
+              <img src='images_new/iros_gif.gif' width="200px">
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <papertitle>Look around and learn: self-improving object detection by exploration</papertitle>
+              </p>
+              </p>
+              Gianluca Scarpellini,
+              Stefano Rosa,
+              Pietro Morerio, Lorenzo Natale, Alessio del Bue
+              <br>
+              <br>
+            <strong>ECCV 2024</strong> The 18th European Conference on Computer Vision, accepted
+             <br>
+                        <p>We teach an embodied agent to look for disagreement in detected objects, in order to collect samples for fine-tuning an off-the-shelf detector. We analyze the zero-shot transfer of the learned policy.</p>
+            </td>
+            </td>
+          </tr>
+          
+          <tr bgcolor="">
+            <td width="25%">
+              <img src='images_new/I2EDL.jpg' width="200px">
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <papertitle>I2EDL: Interactive Instruction Error Detection and Localization</papertitle>
+              </p>
+              Francesco Taioli,
+              Stefano Rosa,
+              Alberto Castellini,
+              Lorenzo Natale,
+              Alessio Del Bue,
+              Alessandro Farinelli,
+              Marco Cristani,
+              Yiming Wang
+              <br>
+            <strong>RO-MAN 2024</strong>, accepted            
+            <br>
+            <a href="http://arxiv.org/abs/2406.05080">[ArXiv]</a>  
+            <p>We extend IEDL to programmatically interact with the user, balancing interactions and success rate increase.</p>
+            </td>
+          </tr>
+
+          <tr bgcolor="">
+            <td width="25%">
+              <img src='images_new/teaser5.jpg' width="200px">
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <papertitle>Mind the Error! Detection and Localization of Instruction Errors in Vision-and-Language Navigation</papertitle>
+              </p>
+              Francesco Taioli,
+              Stefano Rosa,
+              Alberto Castellini,
+              Lorenzo Natale,
+              Alessio Del Bue,
+              Alessandro Farinelli,
+              Marco Cristani,
+              Yiming Wang
+              <br>
+            <strong>IROS 2024</strong> The 2024 IEEE/RSJ International Conference on Intelligent Robots and Systems, accepted 
+            <br>
+            <strong>Embodied AI Workshop,</strong> CVPR 2024	            
+            <br>
+            <a href="https://intelligolabs.github.io/R2RIE-CE/">[Web]</a>
+            <a href="https://arxiv.org/abs/2403.10700">[ArXiv]</a>  
+            <p>We propose a benchmark that introduces instruction errors in VLN datasets considering potential human causes and a baseline method for detection and localization of errors. 
+            This benchmark provides insight into the robustness of VLN systems in continuous environments.</p>
+            </td>
+          </tr>
+          
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+                  <tr>
+                    <td width="100%" valign="middle">
+                      <heading>2023</heading>
+                    </td>
+                  </tr>
+        </table>
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+
+          <tr bgcolor="">
+            <td width="25%">
+              <img src='images_new/tourguiderobot.jpg' width="200px">
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <papertitle>Tour Guide Robot: a 5G-enabled Robot Museum Guide</papertitle>
+              </p>
+              Stefano Rosa,
+              Marco Randazzo,
+              Ettore Landini,
+              Stefano Bernagozzi,
+              Giancarlo Sacco,
+              Mara Piccinino,
+              Lorenzo Natale
+              <br>
+            <strong>Frontiers in Robotics and AI, 2023</strong>, DOI: 10.3389/FROBT.2023.1323675
+            <br>
+            <a href="https://www.frontiersin.org/articles/10.3389/frobt.2023.1323675/full">[Web]</a>
+            <a href="https://github.com/hsp-iit/tour-guide-robot">[code]</a>
+            <p>We present development choices and findings in the deployment of a 5G-connected autonomous tour guide robot.</p>
+            </td>
+          </tr>
+
+          <tr bgcolor="">
+            <td width="25%">
+              <img src='images_new/iros_gif.gif' width="200px">
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <papertitle>Semantic Disagreement for Embodied Active Perception</papertitle>
+              </p>
+              </p>
+              Gianluca Scarpellini,
+              Stefano Rosa,
+              Pietro Morerio, Lorenzo Natale, Alessio del Bue
+              <br>
+              <br>
+            <strong>OOD Workshop on Out Of Distribution Generalization in Computer Vision,</strong> ICCV 2023
+             <br>
+            <a href="https://www.ood-cv.org/paper.html">[Web]</a>
+           </td>
+            </td>
+          </tr>
+
+      </table>
+
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+                  <tr>
+                    <td width="100%" valign="middle">
+                      <heading>2022</heading>
+                    </td>
+                  </tr>
+        </table>
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+
+          <tr bgcolor="">
+            <td width="25%">
+              <img src='images_new/framework_overview_tpami.jpg' width="200px">
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <papertitle>Learning Selective Sensor Fusion for State Estimation</papertitle>
+              </p>
+              <a href="http://www.cs.ox.ac.uk/people/changhao.chen/">Changhao Chen</a>,
+              Stefano Rosa,
+              <a href="http://www.cs.ox.ac.uk/people/xiaoxuan.lu/">Chris Xiaoxuan Lu</a>,
+              <a href="http://www.cs.ox.ac.uk/people/niki.trigoni/">Niki Trigoni</a>,
+              <a href="http://www.cs.ox.ac.uk/people/andrew.markham/">Andrew Markham</a>
+              <br>
+            <strong>IEEE Transactions on Neural Networks and Learning Systems, 2022</strong>, DOI: 10.1109/TNNLS.2022.3176677
+            <br>
+            <a href="https://ieeexplore.ieee.org/abstract/document/9788038">[PDF]</a>
+            </td>
+          </tr>
+
+      </table>
+
+        
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+                  <tr>
+                    <td width="100%" valign="middle">
+                      <heading>2021</heading>
+                    </td>
+                  </tr>
+        </table>
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+
+          <tr bgcolor="">
+            <td width="25%">
+              <img src='images_new/randlanet-tpami.jpg' width="200px">
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <papertitle>Learning Semantic Segmentation of Large-Scale Point Clouds with Random Sampling</papertitle>
+              </p>
+              <a href="http://www.cs.ox.ac.uk/people/quingyong.hu/">Quingyong Hu</a>,
+              <a href="http://www.cs.ox.ac.uk/people/bo.yang/">Bo Yang</a>,
+              <a href="http://www.cs.ox.ac.uk/people/linhai.xie/">Linhai Xie</a>,
+              Stefano Rosa,
+              <a href="">Yulan Guo</a>,
+              <a href="https://www.cs.ox.ac.uk/people/zhihua.wang/">Zhihua Wang</a>,
+              <a href="http://www.cs.ox.ac.uk/people/niki.trigoni/">Niki Trigoni</a>,
+              <a href="http://www.cs.ox.ac.uk/people/andrew.markham/">Andrew Markham</a>,
+            <br>
+            <strong>Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2021</strong>, DOI: 10.1109/TPAMI.2021.3083288
+            <br>
+            <a href="https://ieeexplore.ieee.org/document/9440696">[PDF]</a>
+            </td>
+          </tr>
+
+      </table>
+    
+      
+      
+      
+      
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>2020</heading>
+            </td>
+          </tr>
+        </table>
+
+
+
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+
+          <tr bgcolor="">
+            <td width="25%">
+              <img src='images_new/SemanticKITTI-2.gif' width="200px">
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <papertitle>RandLA-Net: Efficient Semantic Segmentation of Large-Scale Point Clouds</papertitle>
+              </p>
+              <a href="http://www.cs.ox.ac.uk/people/quingyong.hu/">Quingyong Hu</a>,
+              <a href="http://www.cs.ox.ac.uk/people/bo.yang/">Bo Yang</a>,
+              <a href="http://www.cs.ox.ac.uk/people/linhai.xie/">Linhai Xie</a>,
+              Stefano Rosa,
+              <a href="">Yulan Guo</a>,
+              <a href="https://www.cs.ox.ac.uk/people/zhihua.wang/">Zhihua Wang</a>,
+              <a href="http://www.cs.ox.ac.uk/people/niki.trigoni/">Niki Trigoni</a>,
+              <a href="http://www.cs.ox.ac.uk/people/andrew.markham/">Andrew Markham</a>,
+              <br>
+              <strong>CVPR-2020</strong>, Conference on Computer Vision and Pattern Recognition, Seattle, WA
+              <br>
+              <a href="https://arxiv.org/abs/1911.11236">[PDF]</a>
+              <a href="https://github.com/QingyongHu/RandLA-Net">[code]</a>
+              <a href="https://youtu.be/Ar3eY_lwzMk">[video]</a>
+              <p>We show that random sampling combined with attention can achieve SOA performances in semantic segmentation while processing large point clouds in near real-time.</p>
+            </td>
+          </tr>
+
+
+          <tr bgcolor="">
+            <td width="25%">
+              <img src='images_new/millimap.png' width="200px">
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <papertitle>milliMap: Robust Indoor Mapping with Low-cost mmWave Radar</papertitle>
+              </p>
+              <a href="http://www.cs.ox.ac.uk/people/xiaoxuan.lu/">Chris Xiaoxuan Lu</a>,
+              Stefano Rosa,
+              <a href="http://www.cs.ox.ac.uk/people/peijun.zhao/">Peijun Zhao</a>,
+              <a href="http://www.cs.ox.ac.uk/people/bing.wang/">Bing Wang</a>,
+              <a href="http://www.cs.ox.ac.uk/people/changhao.chen/">Changhao Chen</a>,
+              <a href="http://www.cs.ox.ac.uk/people/niki.trigoni/">Niki Trigoni</a>,
+              <a href="http://www.cs.ox.ac.uk/people/andrew.markham/">Andrew Markham</a>,
+              <br>
+              <strong>MOBYSIS-2020</strong>, The 18th ACM International Conference on Mobile Systems, Applications, and Services, Toronto, Canada, June 2020
+              <br>
+              <a href="https://arxiv.org/abs/1911.00398">[PDF]</a>
+              <p> We show how to build dense occupancy grid maps of indoor environments from sparse, noisy mmWave measurements, with cross-modal training.</p>
+            </td>
+          </tr>
+
+          <tr bgcolor="">
+            <td width="25%">
+              <img src='images_new/DeepTIO.png' width="200px">
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <papertitle>DeepTIO: A Deep Thermal-Inertial Odometry with Visual Hallucination</papertitle>
+              </p>
+              <a href="https://www.cs.ox.ac.uk/people/muhamadrisqiu.saputra/">Muhamad Saputra</a>,
+              <a href="https://www.cs.ox.ac.uk/people/pedro.gusmao/">Pedro Gusmao</a>,
+              <a href="http://www.cs.ox.ac.uk/people/xiaoxuan.lu/">Chris Xiaoxuan Lu</a>,
+              <a href="http://www.cs.ox.ac.uk/people/yasin.almalioglu/">Yasin Almalioglu</a>,
+              Stefano Rosa,
+              <a href="http://www.cs.ox.ac.uk/people/changhao.chen/">Changhao Chen</a>,
+              <a href="http://www.cs.ox.ac.uk/people/johan.wahlstrom/">Johan Wahlstrom</a>,
+              <a href="http://www.cs.ox.ac.uk/people/wei.wang/">Wei Wang</a>,
+              <a href="http://www.cs.ox.ac.uk/people/andrew.markham/">Andrew Markham</a>,
+              <a href="http://www.cs.ox.ac.uk/people/niki.trigoni/">Niki Trigoni</a>
+              <br>
+              <strong>RA-L</strong>, IEEE Robotics and Automation Letters
+              <br>
+              <strong>ICRA-2020</strong>, International Conference on Robotics and Automation, Paris, France, May 2020
+              <br>
+              <a href="https://arxiv.org/pdf/1909.07231.pdf">[PDF]</a>
+              <p>In this RA-L work we try to hallucinate visual features from thermal images that can help first responders to navigate visually-denied scenarios.</p>
+            </td>
+          </tr>
+
+         
+
+
+
+
+      </table>
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="100%" valign="middle">
+            <heading>2019</heading>
+          </td>
+        </tr>
+      </table>
+
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+
+          <tr bgcolor="">
+            <td width="25%">
+              <img src='images_new/select_cvpr.png' width="200px">
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <papertitle>Selective Sensor Fusion for Neural Visual-Inertial Odometry</papertitle>
+              </p>
+              <a href="http://www.cs.ox.ac.uk/people/changhao.chen/">Changhao Chen</a>,
+              Stefano Rosa,
+              <a href="https://sites.google.com/view/yishumiao">Yishu Miao</a>,
+              <a href="http://www.cs.ox.ac.uk/people/xiaoxuan.lu/">Chris Xiaoxuan Lu</a>,
+              <a href="">Wei Wu</a>,
+              <a href="http://www.cs.ox.ac.uk/people/andrew.markham/">Andrew Markham</a>,
+              <a href="http://www.cs.ox.ac.uk/people/niki.trigoni/">Niki Trigoni</a>
+              <br>
+              <strong>CVPR-2019</strong>, Conference on Computer Vision and Pattern Recognition,
+              Long Beach, USA, June 2019
+              <br>
+              <a href="http://www.cs.ox.ac.uk/files/10813/Selective_Sensor_Fusion_Chen.pdf">[PDF (2.6 MB)]</a>
+              <a href="http://www.cs.ox.ac.uk/publications/publication12421.bib">[Bibtex]</a>
+              <a href="https://changhaoc.github.io/selective_sensor_fusion/">[Project Website]</a>
+              <p>We show how data-learned sensor fusion strategies can improve accuracy and robustness in deep VIO when dealing with noisy/corrupted data, while adding interpretability.</p>
+            </td>
+          </tr>
+
+<!--           <tr onmouseout="motiontransformer_stop()" onmouseover="motiontransformer_start()"  bgcolor="">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='motiontransformer_image'><img src='images_new/motiontransformer_after.png' width="200px"></div>
+                <img src='images_new/motiontransformer.png' width="200px">
+              </div>
+              <script type="text/javascript">
+                function motiontransformer_start() {
+                  document.getElementById('motiontransformer_image').style.opacity = "1";
+                }
+
+                function motiontransformer_stop() {
+                  document.getElementById('motiontransformer_image').style.opacity = "0";
+                }
+                motiontransformer_stop()
+              </script>
+              <br>
+              <br>
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <papertitle>MotionTransformer: Transferring Neural Inertial Tracking Between Domains</papertitle>
+              </p>
+              <strong>Changhao Chen</strong>,
+              <a href="https://sites.google.com/view/yishumiao">Yishu Miao</a>,
+              <a href="http://www.cs.ox.ac.uk/people/xiaoxuan.lu/">Chris Xiaoxuan Lu</a>,
+              <a href="http://www.cs.ox.ac.uk/people/linhai.xie/">Linhai Xie</a>,
+              <a href="https://www.cs.ox.ac.uk/people/phil.blunsom/">Phil Blunsom</a>,
+              <a href="http://www.cs.ox.ac.uk/people/andrew.markham/">Andrew Markham</a>,
+              <a href="http://www.cs.ox.ac.uk/people/niki.trigoni/">Niki Trigoni</a>
+              <br>
+              <strong>AAAI-2019</strong>, The 33rd AAAI Conference on Artificial Intelligence, Honolulu, USA, Feb 2019
+              <br>
+              <a href="http://www.cs.ox.ac.uk/files/10408/motiontransformer-transferring-neural%20%283%29.pdf">[PDF (1.3 MB)]</a>
+              <a href="http://www.cs.ox.ac.uk/publications/publication12244.bib">[Bibtex]</a>
+              <p></p>
+              <p> A robust generative adversarial network for sequence domain transformation, which is able to directly learn inertial tracking in unlabelled domains without using any paired sequences.</p>
+            </td>
+          </tr> -->
+
+
+
+ <!--          <tr>
+            <td width="25%">
+              <img src='images_new/autotune_www.png' width="200px">
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <papertitle>Autonomous Learning for Face Recognition in the Wild via Ambient Wireless Cues</papertitle>
+              </p>
+              <a href="http://www.cs.ox.ac.uk/people/xiaoxuan.lu/">Chris Xiaoxuan Lu</a>,
+              <a href="">Xuan Kan</a>,
+              <a href="">Bowen Du</a>,
+              <strong>Changhao Chen</strong>
+              <a href="https://warwick.ac.uk/fac/sci/dcs/people/hongkai_wen/">Hongkai Wen</a>,
+              <a href="http://www.cs.ox.ac.uk/people/andrew.markham/">Andrew Markham</a>,
+              <a href="http://www.cs.ox.ac.uk/people/niki.trigoni/">Niki Trigoni</a>
+              <a href="https://engineering.virginia.edu/faculty/john-stankovic">John A. Stankovic</a>
+              <br>
+              <strong>WWW-2019</strong>, The Web Conference, San Francisco, USA, May 2019
+              <br>
+              <a href="http://www.cs.ox.ac.uk/files/10828/autotune.pdf">[PDF (1.9 MB)]</a>
+              <a href="http://www.cs.ox.ac.uk/publications/publication12279.bib">[Bibtex]</a>
+              <p> AutoTune, which learns and refines the association between a face and
+                wireless identifier over time, by increasing the inter-cluster separation and minimizing the intra cluster distance.</p>
+            </td>
+          </tr>
+ -->
+
+        </table>
+
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>2018</heading>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+
+          <tr>
+            <td width="25%"><img src="images_new/25d_3d_mapping.jpg" alt="prl" width="200px"></td>
+            <td width="75%" valign="top">
+              <p>
+                <p>
+                  <papertitle>3D Object Dense Reconstruction from a Single Depth View</papertitle>
+                </p>
+                <a href="http://www.cs.ox.ac.uk/people/bo.yang/">Bo Yang</a>,
+                Stefano Rosa,
+                <a href="http://www.cs.ox.ac.uk/people/andrew.markham/">Andrew Markham</a>,
+                <a href="http://www.cs.ox.ac.uk/people/niki.trigoni/">Niki Trigoni</a>,
+                <a href="https://warwick.ac.uk/fac/sci/dcs/people/hongkai_wen/">Hongkai Wen</a>
+                <br>
+                <strong>Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2018</strong>, DOI: 10.1109/TPAMI.2018.2868195
+                <br>
+                <a href="https://arxiv.org/pdf/1802.00411.pdf">[PDF]</a>
+                <a href="">[Bibtex]</a>
+                <p></p>
+                <p>We propose an end-to-end approach to high-resolution reconstruction of 3D objects from a single depth image.
+                We also release a real-world dataset for 3D reconstruction. We argue that real-world benchmarks for shape reconstruction are necessary for a thorough validation of future approaches. </p>
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="25%">
+              <img src='images_new/neurips.png' width="200px">
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <papertitle>Learning the Intuitive Physics of Non-Rigid Object Deformations</papertitle>
+              </p>
+              Stefano Rosa,
+              <a href="https://www.cs.ox.ac.uk/people/zhihua.wang/">Zhihua Wang</a>,
+              <a href="http://www.cs.ox.ac.uk/people/andrew.markham/">Andrew Markham</a>
+              <br>
+              <strong> NeurIPS-2018 Workshops</strong>, Modeling the Physical World: Perception, Learning, and Control, Montreal, 2018
+              <br>
+              <a href="http://phys2018.csail.mit.edu/papers/32.pdf">[PDF]</a>
+              <!-- <a href="http://www.cs.ox.ac.uk/publications/publication12074.bib">[Bibtex]</a> -->
+              <p></p>
+              
+            </td>
+          </tr>
+
+
+          <tr>
+            <td width="25%">
+              <img src='images_new/neural_allocentric.jpg' width="200px">
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <papertitle>Neural Allocentric Intuitive Physics Prediction from Real Videos</papertitle>
+              </p>
+              <a href="https://www.cs.ox.ac.uk/people/zhihua.wang/">Zhihua Wang</a>,
+              Stefano Rosa,
+              <a href="https://sites.google.com/view/yishumiao">Yishu Miao</a>,
+              <a href="">Zihang Lai</a>,
+              <a href="http://www.cs.ox.ac.uk/people/linhai.xie/">Linhai Xie</a>,
+              <a href="http://www.cs.ox.ac.uk/people/niki.trigoni/">Niki Trigoni</a>
+              <br>
+              <strong>arxiv</strong>
+              <br>
+              <a href="https://arxiv.org/abs/1809.03330.pdf">[PDF]</a>
+              <!-- <a href="http://www.cs.ox.ac.uk/publications/publication12074.bib">[Bibtex]</a> -->
+              <p>We learn how to predict future video of interacting objects by decoupling the problem into appearence and dynamics and leaning invertible transformations from real domain to simulation domain and from egocentric view to allocentric view and vice-versa.</p>
+              
+            </td>
+          </tr>
+
+
+          <tr>
+            <td width="25%">
+              <img src='images_new/activitiesonlyCAD_old.png' width="200px">
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <papertitle>Semantic Place Understanding for Human-Robot Coexistence - Towards Intelligent Workplaces</papertitle>
+              </p>
+              Stefano Rosa,
+              <a href="http://www.cs.ox.ac.uk/people/andrea.patane">Andrea Patane'</a>,              
+              <a href="http://www.cs.ox.ac.uk/people/xiaoxuan.lu/">Chris Xiaoxuan Lu</a>,
+              <a href="http://www.cs.ox.ac.uk/people/niki.trigoni/">Niki Trigoni</a>
+              <br>
+              <strong>Transactions on Human-Machine Systems (THMS), 2018</strong>, DOI: 10.1109/THMS.2018.2875079
+              <br>
+              <a href="https://ora.ox.ac.uk/objects/uuid:28e7145e-bd9c-4fb3-8103-b1f12ebc036c/download_file?file_format=pdf&safe_filename=SemanticPlaceUnderstandingHumanRobotCoexistence.pdf&type_of_work=Journal+article">[PDF]</a>
+              <!-- <a href="http://www.cs.ox.ac.uk/publications/publication12074.bib">[Bibtex]</a> -->
+              <p>Robots and users can work synergistically by mutually learning over time, and benefitting from each other by exploiting each other's strengths. We show how detecting user activities can help robots to learn semantic understanding of the environment, while at the same time learning to better localise the user. 
+              </p>
+              
+            </td>
+          </tr>
+
+
+          <tr>
+            <td width="25%">
+              <img src='images_new/bridge.gif' width="100px"><img src='images_new/baymax.gif' width="100px">
+
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <papertitle>3D-PhysNet: Learning the Intuitive Physics of Non-Rigid Object Deformations</papertitle>
+              </p>
+              <a href="https://www.cs.ox.ac.uk/people/zhihua.wang/">Zhihua Wang*</a>,
+              Stefano Rosa*,
+              <a href="http://www.cs.ox.ac.uk/people/bo.yang/">Bo Yang</a>,
+              <a href="https://www.hw.ac.uk/staff/uk/eps/dr-sen-wang.htm">Sen Wang</a>,
+              <a href="http://www.cs.ox.ac.uk/people/niki.trigoni/">Niki Trigoni</a>,
+              <a href="http://www.cs.ox.ac.uk/people/andrew.markham/">Andrew Markham</a>
+
+              <br>
+              <strong>IJCAI-2018</strong>, 27th International Joint Conference on Artificial Intelligence, Stockholm, SWE
+              <br>
+              <a href="https://arxiv.org/pdf/1805.00328.pdf">[PDF]</a> <a href="https://github.com/vividda/3D-PhysNet">[code]</a> 
+               <a href="http://intuitivephysics.cs.ox.ac.uk/3dphysnet/">[webpage]</a> 
+              <!-- <a href="http://www.cs.ox.ac.uk/publications/publication12074.bib">[Bibtex]</a> -->
+              <p>We show that conditioning a generative model that predicts soft object deformations on real physical properties can improve prediction accuracy as well as enabling generalisation abilities.</p>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td width="25%">
+              <img src='images_new/defonet.jpg' width="200px">
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <papertitle>Defo-Net: Learning Body Deformation using Generative Adversarial Networks</papertitle>
+              </p>
+              <a href="https://www.cs.ox.ac.uk/people/zhihua.wang/">Zhihua Wang*</a>,
+              Stefano Rosa*,
+              <a href="http://www.cs.ox.ac.uk/people/bo.yang/">Bo Yang</a>,
+              <a href="http://www.cs.ox.ac.uk/people/linhai.xie/">Linhai Xie</a>,              
+              <a href="https://www.hw.ac.uk/staff/uk/eps/dr-sen-wang.htm">Sen Wang</a>,
+              <a href="http://www.cs.ox.ac.uk/people/niki.trigoni/">Niki Trigoni</a>,
+              <a href="http://www.cs.ox.ac.uk/people/andrew.markham/">Andrew Markham</a>
+
+              <br>
+              <strong>ICRA-2018</strong>, IEEE International Conference on Robotics and Automation, Brisbane, AU
+              <br>
+              <a href="http://arxiv.org/pdf/1804.05928.pdf">[PDF]</a> <a href="https://github.com/vividda/Defo-net">[code]</a> 
+              <a href="https://www.youtube.com/watch?v=noG5DDX3coQ">[video]</a>
+              <a href="http://intuitivephysics.cs.ox.ac.uk/defonet/">[webpage]</a> 
+              <!-- <a href="http://www.cs.ox.ac.uk/publications/publication12074.bib">[Bibtex]</a> -->
+              <p>We show that conditioning a generative model that predicts soft object deformations on real physical properties can improve prediction accuracy as well as enabling generalisation abilities.</p>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td width="25%">
+              <img src='images_new/nav_workshop.png' width="200px">
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <papertitle>Learning with Training Wheels: Speeding up Training with a Simple Controller for Deep Reinforcement Learning</papertitle>
+              </p>
+              <a href="http://www.cs.ox.ac.uk/people/linhai.xie/">Linhai Xie</a>,
+              <a href="https://www.hw.ac.uk/staff/uk/eps/dr-sen-wang.htm">Sen Wang</a>,
+              Stefano Rosa,
+              <a href="http://www.cs.ox.ac.uk/people/andrew.markham/">Andrew Markham</a>,
+              <a href="http://www.cs.ox.ac.uk/people/niki.trigoni/">Niki Trigoni</a>
+              <br>
+              <strong>ICRA-2018</strong>, IEEE International Conference on Robotics and Automation, Brisbane, AU
+              <br>
+              <a href="http://www.cs.ox.ac.uk/files/9953/Learning%20with%20Training%20Wheels.pdf">[PDF]</a>
+              <a href="https://www.youtube.com/watch?v=eAKL1_vNabk">[video]</a>
+              <!-- <a href="">[Bibtex]</a> -->
+              <p></p>
+              <p>We propose a way to embed a switchable, simple controller into a deep reinforcement learning algorithm, to speed up training of mobile robot navigation in simulated environments.</p>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td width="25%">
+              <img src='images_new/commonsense.jpg' width="200px">
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <papertitle>CommonSense: Collaborative learning of scene semantics by robots and humans</papertitle>
+              </p>
+              Stefano Rosa,
+              <a href="http://www.cs.ox.ac.uk/people/andrea.patane">Andrea Patane'</a>,              
+              <a href="http://www.cs.ox.ac.uk/people/xiaoxuan.lu/">Chris Xiaoxuan Lu</a>,
+              <a href="http://www.cs.ox.ac.uk/people/niki.trigoni/">Niki Trigoni</a>
+              <br>
+              <strong>MOBISYS-2018 Workshops</strong>, 1st International Workshop on Internet of People, Assistive Robots and ThingS (IoPARTS), Munich, DE
+              <br>
+              <a href="http://qav.comlab.ox.ac.uk/papers/rpl+18.pdf">[PDF]</a>
+              <!-- <a href="http://www.cs.ox.ac.uk/publications/publication12074.bib">[Bibtex]</a> -->
+              <p>
+              </p>
+              
+            </td>
+          </tr>
+
+
+        </table>
+
+
+
+
+
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>2017</heading>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+        <a name="pso2"></a>
+        <li>Lu X., Kan X., Rosa S., Wen H., Markham A., Trigoni N., <b>Towards Self-supervised Face Labeling via Cross-modality Association</b>, poster, SenSys 2017, The Netherlands <a href="https://dl.acm.org/citation.cfm?id=3131672.3136991">[PDF]</a></li>            
+        <a name="hri2017"></a>
+        <li> Rosa S., Lu X., Wen H., Trigoni N.,
+        <b>Leveraging User Activities and Mobile Robots for Semantic Mapping and User Localization.</b>, HRI 2017 late break reports <a href="https://www.cs.ox.ac.uk/files/9031/p267-rosa.pdf">[PDF]</a> </li>
+        <li> Rosa S., Toscana G., Bona B. <b>Q-PSO: Fast Quaternion-based Pose Estimation From RGB-D Images,</b> Journal of Intelligent and Robotic Systems, 2017, DOI: 10.1007/s10846-017-0714-3 <a href="http://em.rdcu.be/wf/click?upn=KP7O1RED-2BlD0F9LDqGVeSC4B6dY9NHo2G6c1kHepGmY-3D_-2FmMd5KLcJYyyIX-2FuE5a4Rgc-2FAb-2FY18cPHuSodf3rchvRZ8IpDaaSS3glxQk8xydxtvZB590wBWlLbAQMPINP4NcE7HcAZXUOeUzd-2FG9bsZsqxRVf3FOUKrd7DHWsXU5YOHmD7OAAJcPKO68UPINyyCU84Kb3X9seHTeqlTDVNBHtEI-2BNxXbJ3C9650pe16V383TIUFav8KUrsUNWwUS905iI2SgixPoxw9tVwgYflYT08gG53JeQCwE7G-2FXa13bGGq8EkHQeXZ3P05OKanYPIg-3D-3D">[PDF]</a> <a href="https://github.com/morpheus1820/Q-PSO">[code]</a></li>
+        <li>Anjum M.L., Rosa S., Bona B. <b>Tracking a subset of skeleton joints - An effective approach towards complex human activity recognition,</b> Journal of Robotics, vol. 2017, doi:10.1155/2017/7610417 <a href="http://www.hindawi.com/journals/jr/2017/7610417/">[PDF]</a> <a href="https://github.com/rrg-polito/activity-recognition-project">[code]</a></li>
+        </table>
+
+
+
+
+
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>2016</heading>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <li> Rosa S., Toscana G.
+        <b> Fast Feature-Less Quaternion-based Particle Swarm Optimization for Rigid and Articulated Pose Estimation From RGB-D Images,</b> poster, ECCV 2016, Amsterdam, NL</li>
+        <a name="pso"></a>
+        <li> Toscana G., Rosa S.,
+        <b>Fast Feature-Less Quaternion-based Particle Swarm Optimization for Object Pose Estimation From RGB-D Images</b>, BMVC 2016, York, UK <a href="preprints/bmvc2016.pdf">[PDF]</a>
+        <a href="https://www.youtube.com/watch?v=ZlPaKid1Ggk">[video]</a>
+        GPU:<a href="https://github.com/morpheus1820/Q-PSO">[code]</a>
+        CPU:<a href="https://github.com/morpheus1820/Q-PSO_CPU">[code]</a></li>
+        <a name="graphseg"></a>
+        <li> Toscana G., Rosa S., Bona B.,
+        <b>Fast Graph-Based Object Segmentation for RGB-D Images</b>, Intellisys 2016, London, UK
+        <a href="https://arxiv.org/abs/1605.03746">[PDF]</a>
+        <a href="https://www.youtube.com/watch?v=useuTdt1itg">[video]</a>
+        <a href="https://github.com/rrg-polito/graph-canny-segm">[code]</a></li>
+        <li> Toscana G., Rosa S., Bona B.,
+        <b>Vocal Interaction with a 7-DOF Robotic Arm for Object Detection, Learning and Grasping</b>, HRI 2016 Late break reports <a href="preprints/hrilb2153.pdf">[PDF]</a>
+        <a href="https://www.youtube.com/edit?o=U&video_id=uaCZAngq02Y">[video]</a></li>
+        <li>Russo L.O., Rosa S., Maggiora M., Bona B. <b>A Novel Cloud Based Service Robotics Application to Data Center
+        Environmental Monitoring,</b> Sensors, 2016, DOI: 10.3390/s16081255 <a href="http://www.mdpi.com/1424-8220/16/8/1255/pdf">[PDF]</a></li>
+        <a name="fly4smart2"></a>
+        <li>Ermacora G., Rosa S., Toma A. <b>Fly4SmartCity: a Cloud Robotics Service for Smart City Applications,</b> Journal of Ambient Intelligence and Smart Environments, 2016, DOI: 10.3233/AIS-160374 <a href="http://content.iospress.com/articles/journal-of-ambient-intelligence-and-smart-environments/ais374">[PDF]</a></li>
+        </table>
+    
+
+
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>2015</heading>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+        <li> Rosa S., Russo L.O., Toscana G., Primatesta S., Kaouk Ng M., Bona B.,
+        <b>Leveraging the Cloud for Connected Service Robotics Applications</b>, Workshop on Robotics and Technology Transfer, ETFA 2015, Luxemburg, LU</li>
+        <li> B. de Gusmao P.B., Rosa S., Magli E., Leps&oslash;y S., Francini L.,
+        <b>Robotics Navigation Using MPEG CDVS</b>, 17th International Workshop on Multimedia Signal Processing, MMSP 2015, Xiamen, China<a href="http://porto.polito.it/2638899/2/MMSP_submitted.pdf">[PDF]</a></li>
+        <li> Lupetti M.L., Rosa S., Ermacora G.,
+        <b>From a Robotic Vacuum Cleaner to Robot Companion: Acceptance and Engagement in Domestic Environments.</b>, HRI 2015 late break reports</li>
+        </table>
+
+
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>2014</heading>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <li>Russo L.O., Farulla G., Pianu D., Salgarella A., Controzzi M., Cipriani C., Oddo C., Geraci C., Rosa S., Indaco M., <b>A remote communication system for deafblind persons by means of gesture recognition</b>, International Journal of Advanced Robotic Systems, 2014
+            <a href="preprints/ijars2015.pdf">[PDF]</a></li>         
+     		 <li>Bona B., Carlone L., Indri M., Rosa S.,<b>Supervision and monitoring of logistic spaces by a cooperative robotic team: methodologies, problems, and solutions,</b> Intelligent Service Robotics, 2014, DOI: 10.1007/s11370-014-0151-0
+            <a href="preprints/isr2014.pdf">[PDF]</a></li>
+            <li>Rosa S., Russo L.O., Bona B.,
+            <a name="ced2"></a>
+            <b>Towards A ROS-Based Autonomous Cloud Robotics Platform for Data Center Monitoring.</b> the 19th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA), Barcelona, Spain, 2014
+            <a href="preprints/etfa2014.pdf">[PDF]</a></li>
+            <li> G. Ermacora, A. Toma, S. Rosa, B.
+            Bona, M. Chiaberge, M. Silvagni, M. Gaspardone, R. Antonini,
+            <b>A cloud based service for management and planning of autonomous
+            UAV missions in smartcity scenarios</b>, MESAS 2014, Rome, IT</li>
+            <li>Airo' Farulla G., Russo L.O., Pintor C., Pianu D., Micotti G., Salgarella A.R., Camboni D., Controzzi M.,  Cipriani C., Calogero M.O., Rosa S., Indaco M.,
+            <b>Real-time single camera hand gesture recognition system for remote deaf-blind communication</b> 1st International Conference on Augmented and Virtual Reality - Salento AVR 2014, Lecce, 17-20 September 2014
+            <a href="preprints/savr2014.pdf">[PDF]</a></li>
+            <li>Ahmad O., Yin J., Bona B., Rosa S., Anjum M.L., <b>Skeleton Tracking Based Complex Human Activity Recognition Using Kinect Camera</b>, ICSR 2014, Syndey, AU
+            <a href="preprints/icsr2014.pdf">[PDF]</a></li>
+            <a name="fly4smart1"></a>
+            <li>Ermacora G., Toma A., Rosa S., Antonini R.,
+            <b>Leveraging open data for supporting a cloud robotics service in a smart city environment.</b> at IAS-13, July 15 - 19, 2014, Padova, Italy
+            <a href="preprints/ias2013-33.pdf">[PDF]</a></li>
+            <a name="ced1"></a>
+            <li>Rosa S., Russo L.O., Airò Farulla G., Antonini R., Gaspardone M., Carlone L., Bona B.,
+            <b>An Application of Laser-Based Autonomous Navigation for Data-Center Monitoring.</b> at IAS-13, July 15 - 19, 2014, Padova, Italy
+            <a href="preprints/ias2013-64.pdf">[PDF]</a></li>
+            <li>Yuan Z., Rosa S., Russo L.O., Bona B.,
+            <b>A Kinect-based Front-end for Graph-SLAM Using Plane Matching in Planar Indoor Environments.</b> at IAS-13, July 15 - 19, 2014, Padova, Italy
+            <a href="preprints/ias2013-87.pdf">[PDF]</a></li>
+            <li>Yin J., Carlone L., Rosa S., Anjum M.L., Bona B.,
+            <b>Scan Matching for Graph SLAM in Indoor Dynamic Scenarios.</b>27th International FLAIRS Conference, May 21 - 23, 2014, Pensacola Beach, Florida, USA</li>
+            <li>Russo L.O., Rosa S., Matteucci M., Bona B., 
+            <b>A ROS Implementation of the Mono-SLAM Algorithm.</b> In: International Conference on Artificial Intelligence &amp; Applications (ARIA-2014), 2014
+            <a href="preprints/aria2014.pdf">[PDF]</a> <a href="https://github.com/rrg-polito/mono-slam">[code]</a></li>
+          </table>
+
+
+
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>2013</heading>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+                      
+            <a name="macp4log3"></a>
+            <li>Abrate F., Bona B., Indri M., Rosa S., Tibaldi F.,<b>Multi-robot map updating in dynamic environments</b>, in Springer Tracts in Advanced Robotics, Volume 83, 2013, DOI: 10.1007/978-3-642-32723-0
+            <a href="preprints/star2013.pdf">[PDF]</a></li>
+            <li>Russo L.O., Airò farulla G., Indaco M., Rosa S., Rolfo D., Bona B.,
+            <b>Blurring prediction in Monocular SLAM</b>, In: 8th IEEE International Design &amp; Test Symposium 2013 (IDT), 2013
+            <a href="preprints/idt2013.pdf">[PDF]</a></li>
+            <a name="lago1"></a>
+        </table>
+            
+
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>2012</heading>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+            <a name="macp4log2"></a>
+            <li>Abrate F., Bona B., Indri M., Rosa S., Tibaldi F., <b>Multirobot Localization in Highly Symmetric Environments</b>, Journal of Intelligent and Robotic Systems, 2012, DOI: 10.1007/s10846-012-9790-6
+            <a href="preprints/jirs2012.pdf">[PDF]</a></li>
+            <li>L. Carlone, J. Yin, S. Rosa, Z. Yuan, <b>Graph optimization with unstructured covariance: fast, accurate, linear approximation.</b> In: Simulation, Modeling, and Programming for Autonomous Robots (SIMPAR 2012), 2012.
+            <a href="preprints/simpar2012.pdf">[PDF]</a> <a href="https://github.com/rrg-polito/lago">[code]</a></li>
+            <a name="hog1"></a>
+            <li>Rosa S., Paleari M., Ariano P., Bona B., <b>Object Tracking with Adaptive HOG Detector and Adaptive Rao-Blackwellised Particle Filter.</b> In: SPIE 8301, Intelligent Robots and Computer Vision XXIX: Algorithms and Techniques, 2012.
+            <a href="preprints/spie2012.pdf">[PDF]</a></li>
+          </table>
+
+
+
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>2011</heading>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+            <li>Paleari M., Margaria V., Rosa S., Ariano P., <b>HExEC: hand exoskeleton electromyographic control</b>, 4th International Workshop on Human-Friendly Robotics (HFR 2011) November 8th-9th, 2011, University of Twente, The Netherlands
+            <a href="preprints/hfr2011.pdf">[PDF]</a></li>
+        </table>
+
+        
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>2010</heading>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+        <a name="macp4log4"></a>
+            <li>Macchia V.; Rosa S; Carlone L; Bona B., <b>An Application of Omnidirectional Vision to Grid-based SLAM in Indoor Environments.</b> In: Workshop on Omnidirectional Robot Vision, International Conference on Robotics and Automation (ICRA 2010), 2010.
+            <a href="preprints/icra2011.pdf">[PDF]</a></li>
+            <a name="macp4log5"></a>      
+            <li>Abrate F; Bona B; Indri M; Rosa S.; Tibaldi F., <b>Map updating in dynamic environments.</b> In: ISR/ROBOTIK 2010, 2010.
+            <a href="preprints/isr2010.pdf">[PDF]</a></li>
+          </table>
+
+    
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>2009</heading>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+            <a name="macp4log6"></a>
+            <li>Brevi D., Fileppo F. , Scopigno R. , Abrate F., Bona B., Rosa S., Tibaldi F., <b>Hybrid localization solutions for robotic logistic applications.</b> In: Technologies for Practical Robot Applications (TePRA), 2009.
+            <a href="preprints/tepra2010.pdf">[PDF]</a></li>
+            <a name="macp4log7"></a>
+            <li>Abrate F; Bona B.; Indri M; Rosa S; Tibaldi F., <b>Three-State Multirobot Collaborative Localization in Symmetrical Environments.</b> In: ROBOTICA 2009, 2009
+            <a href="preprints/tepra2010.pdf">[PDF]</a></li>
+        </table>
+
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>2008</heading>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+            <a name="macp4log8"></a>
+            <li>Abrate F; Bona B; Indri M.; Rosa S; Tibaldi F.,<b>Switching Multirobot Collaborative Localization in Symmetrical Environments.</b> In: IROS 2008 2nd Workshop on Planning, Perception and Navigation for Intelligent Vehicles, 2008.
+            <a href="preprints/iros2008.pdf">[PDF]</a></li>
+    </table>
+
+
+
+
+
+        <!-- </table> end pubs -->
+<p></p>
+<hr>
+
+
+        <a name="teaching"></a>
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td>
+              <heading>Teaching</heading>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="25%"><img src="images_new/teaching.jpg" alt="pacman" width="200"></td>
+            <td width="75%" valign="center">
+              <p>
+                  <papertitle>Assistant lecturer for Automatic Control, Politecnico di Torino, 2013</papertitle>
+                <br>
+                <papertitle>Assistant lecturer for Basics of Automatic Control, Politecnico di Torino, 2013</papertitle>
+                <br>
+                <br>
+                  <papertitle>Introduction to ROS, Robotics, Politecnico di Torino, 2013-2015</papertitle>
+                <br>
+                <br>
+                  <papertitle>Lecturer for Ph.D. course: Research topics in computer and control engineering, Politecnico di Torino, 2010-2012</papertitle>  
+                <br>
+              </p>
+            </td>
+          </tr>
+        </table>
+
+<hr>
+        <a name="projects"></a>
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>Past projects I worked on</heading>
+              <ul style="list-style-type:disc;">
+                <li><a href="https://convince-project.eu">CONVINCE,</a> Horizon Europe Programme, 2022-</li>
+                <li><a href="https://5g-ppp.eu/5g-tours">5G-TOURS,</a> Horizon 2020, 2020-2022</li>
+                <li><a href="">HATFIL</a> - InnovateUK, 2018-2020</li>
+                <li><a href="https://www.nist.gov/ctl/pscr/pervasive-accurate-and-reliable-lbs-emergency-responders">NIST - IPSER, 2018-2019</a></li>
+                <li><a href="https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/M019918/1">ESPRC Programme Grant "Mobile Robotics: Enabling a Pervasive Technology of the Future", 2016-2018</a></li>
+                <li>STEPS - Sistemi e Tecnologie per l'EsPlorazione Spaziale, 2011</li>
+                <li>HExEC: Hand Exoskeleton Electromyographic Control, 2011</li>
+                <li>MACP4Log - Mobile, autonomous and cooperating robotic platforms for supervision and monitoring of large logistic surfaces, 2008-2010</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+
+<!--         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>Professional Services</heading>
+              <ul style="list-style-type:disc;">
+                <li>Conference Reivewer
+                <ul>
+                  <li>International Conference on Robotics and Automation (ICRA)</li>
+                  <li>International Conference on Intelligent Robots and Systems (IROS)</li>
+                  <li>The Web Conference (WWW)</li>
+                  <li>Conference on Neural Information Processing Systems (NeurIPS)</li>
+                </ul>
+                </li>
+                <li> Journal Reviewer
+                  <ul>
+                    <li>IEEE Transactions on Mobile Computing (TMC)</li>
+                    <li>IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</li>
+                    <li>IEEE Robotics and Automation Letters (RA-L)</li>
+                    <li>IEEE Internet of Things Journal (IoT-J)</li>
+                    <li>IEEE Sensors Journal</li>
+                  </ul>
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </table> -->
+
+        <table style="width:100%;max-width:1000px" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td>
+              <br>
+              <p align="right">
+                <font size="2">
+                  CSS credits: <a href="https://github.com/jonbarron/jonbarron_website"><strong>jonbarron</strong></a>
+                </font>
+              </p>
+            </td>
+          </tr>
+        </table>
+
+<!--         <script type="text/javascript">
+          var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+          document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+          try {
+            var pageTracker = _gat._getTracker("UA-7580334-1");
+            pageTracker._trackPageview();
+          } catch (err) {}
+        </script> -->
+        </td>
+    </tr>
+  </table>
+</div>      <!--        end main      -->
+</body>
+
+</html>
+
