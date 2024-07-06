@@ -1,8 +1,8 @@
 ---
 layout: page
-title: HSPRC
+title: EPSRC
 description: Mobile Robotics - Enabling a Pervasive Technology of the Future
-<!-- img: assets/img/convince.jpg -->
+img: assets/img/epsrc.jpg
 importance: 3
 category: main
 related_publications: true
