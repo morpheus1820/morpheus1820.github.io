@@ -8,11 +8,11 @@ category: main
 related_publications: true
 ---
 
-{% cite brevi2009hybrid %}
-{% cite macchia2010application %}
-{% cite abrate2010multi %}
-{% cite abrate2009three %}
 {% cite abrate2013multirobot %}
 {% cite carlone2012graph %}
 {% cite abrate2010map %}
+{% cite macchia2010application %}
+{% cite abrate2010multi %}
+{% cite brevi2009hybrid %}
+{% cite abrate2009three %}
 {% cite abrate2008switching %}
