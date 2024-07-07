@@ -194,6 +194,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  themes:
+    output: true
+    permalink: /themes/:path/
 
 # announcements:
 #   enabled: false
