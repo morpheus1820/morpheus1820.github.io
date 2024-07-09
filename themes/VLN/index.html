@@ -17,12 +17,13 @@
   
   
     
-      a post with tabs | Stefano Rosa
+      Vision-and-Language Navigation | Stefano Rosa
     
   
 </title>
 <meta name="author" content="Stefano Rosa">
-<meta name="description" content="this is what included tabs in a post could look like">
+<meta name="description" content="Stefano Rosa's webpage
+">
 
 
 
@@ -58,7 +59,7 @@
   <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A4%96&lt;/text&gt;&lt;/svg&gt;">
 
 <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
-<link rel="canonical" href="http://0.0.0.0:8080/sample-posts/2024/05/01/tabs.html">
+<link rel="canonical" href="http://0.0.0.0:8080/themes/VLN/">
 
 <!-- Dark Mode -->
 <script src="/assets/js/theme.js?9a0c749ec5240d9cda97bc72359a72c0"></script>
@@ -224,210 +225,282 @@
     <!-- Content -->
     <div class="container mt-5" role="main">
       
-        
-
-
-
-
-
-
-
-<div class="post">
+        <div class="post">
   <header class="post-header">
-    <h1 class="post-title">a post with tabs</h1>
-    <p class="post-meta">
-      Created in May 01, 2024
-      
-      
-      
-    </p>
-    <p class="post-tags">
-      
-        <i class="fa-solid fa-calendar fa-sm"></i> 2024
-      
-      
-          ·  
-        
-          
-            <i class="fa-solid fa-hashtag fa-sm"></i> formatting
-          
-          
-             
-          
-        
-          
-            <i class="fa-solid fa-hashtag fa-sm"></i> code
-          
-          
-        
-      
-
-      
-          ·  
-        
-          
-            <i class="fa-solid fa-tag fa-sm"></i> sample-posts
-          
-          
-        
-      
-    </p>
+    <h1 class="post-title">Vision-and-Language Navigation</h1>
+    <p class="post-description"></p>
   </header>
 
-  <article class="post-content">
-    
-    <div id="markdown-content">
-      <p>This is how a post with <a href="https://github.com/Ovski4/jekyll-tabs" rel="external nofollow noopener" target="_blank">tabs</a> looks like. Note that the tabs could be used for different purposes, not only for code.</p>
+  <article>
+    <p>Vision-and-Language Navigation (VLN), where agents are guided by natural language instructions, is one of the most intuitive yet challenging embodied AI tasks. 
+However, in practice, instructions given by humans can be incomplete or incorrect.
+A new set of <a href="https://github.com/intelligolabs/R2RIE-CE" rel="external nofollow noopener" target="_blank">benchmarks</a> <a class="citation" href="#taioli2024mind">(Taioli et al., 2024)</a> and techniques <a class="citation" href="#taioli2024i2edl">(Taioli et al., 2024)</a> will be needed to improve the robustness of VLN systems in the real world.</p>
 
-<h2 id="first-tabs">First tabs</h2>
-
-<p>To add tabs, use the following syntax:</p>
-
-<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span><span class="w"> </span><span class="nt">tabs</span><span class="w"> </span><span class="nv">group-name</span><span class="w"> </span><span class="cp">%}</span>
-
-<span class="cp">{%</span><span class="w"> </span><span class="nt">tab</span><span class="w"> </span><span class="nv">group-name</span><span class="w"> </span><span class="nv">tab-name-1</span><span class="w"> </span><span class="cp">%}</span>
-
-Content 1
-
-<span class="cp">{%</span><span class="w"> </span><span class="nt">endtab</span><span class="w"> </span><span class="cp">%}</span>
-
-<span class="cp">{%</span><span class="w"> </span><span class="nt">tab</span><span class="w"> </span><span class="nv">group-name</span><span class="w"> </span><span class="nv">tab-name-2</span><span class="w"> </span><span class="cp">%}</span>
-
-Content 2
-
-<span class="cp">{%</span><span class="w"> </span><span class="nt">endtab</span><span class="w"> </span><span class="cp">%}</span>
-
-<span class="cp">{%</span><span class="w"> </span><span class="nt">endtabs</span><span class="w"> </span><span class="cp">%}</span>
-</code></pre></div></div>
-
-<p>With this you can generate visualizations like:</p>
-
-<ul id="log" class="tab" data-tab="44f75240-5369-468c-9d40-0ed97c7d3384" data-name="log">
-  
-      <li class="active" id="log-php">
-          <a href="#">php </a>
-      </li>
-  
-      <li id="log-js">
-          <a href="#">js </a>
-      </li>
-  
-      <li id="log-ruby">
-          <a href="#">ruby </a>
-      </li>
-  
-</ul>
-<ul class="tab-content" id="44f75240-5369-468c-9d40-0ed97c7d3384" data-name="log">
-  
-      <li class="active">
-<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">var_dump</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">);</span>
-</code></pre></div></div>
-
-</li>
-  
-      <li>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">hello</span><span class="dl">"</span><span class="p">);</span>
-</code></pre></div></div>
-
-</li>
-  
-      <li>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">pputs</span> <span class="dl">'</span><span class="s1">hello</span><span class="dl">'</span>
-</code></pre></div></div>
-
-</li>
-  
-</ul>
-
-<h2 id="another-example">Another example</h2>
-
-<ul id="data-struct" class="tab" data-tab="187e6bec-4e1f-4f16-987b-25c1497589b4" data-name="data-struct">
-  
-      <li class="active" id="data-struct-yaml">
-          <a href="#">yaml </a>
-      </li>
-  
-      <li id="data-struct-json">
-          <a href="#">json </a>
-      </li>
-  
-</ul>
-<ul class="tab-content" id="187e6bec-4e1f-4f16-987b-25c1497589b4" data-name="data-struct">
-  
-      <li class="active">
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">hello</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="s2">"</span><span class="s">whatsup"</span>
-  <span class="pi">-</span> <span class="s2">"</span><span class="s">hi"</span>
-</code></pre></div></div>
-
-</li>
-  
-      <li>
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"hello"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"whatsup"</span><span class="p">,</span><span class="w"> </span><span class="s2">"hi"</span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-</li>
-  
-</ul>
-
-<h2 id="tabs-for-something-else">Tabs for something else</h2>
-
-<ul id="something-else" class="tab" data-tab="0ad2b78e-cc6c-4c32-9939-f0206b12c5c2" data-name="something-else">
-  
-      <li class="active" id="something-else-text">
-          <a href="#">text </a>
-      </li>
-  
-      <li id="something-else-quote">
-          <a href="#">quote </a>
-      </li>
-  
-      <li id="something-else-list">
-          <a href="#">list </a>
-      </li>
-  
-</ul>
-<ul class="tab-content" id="0ad2b78e-cc6c-4c32-9939-f0206b12c5c2" data-name="something-else">
-  
-      <li class="active">
-<p>Regular text</p>
-
-</li>
-  
-      <li>
-<blockquote>
-  <p>A quote</p>
-</blockquote>
-
-</li>
-  
-      <li>
-<p>Hipster list</p>
-
-<ul>
-  <li>brunch</li>
-  <li>fixie</li>
-  <li>raybans</li>
-  <li>messenger bag</li>
-</ul>
-
-</li>
-  
-</ul>
-
-
-    </div>
   </article>
 
   
+    <h2>References</h2>
+    <div class="publications">
+      <h2 class="bibliography">2024</h2>
+<ol class="bibliography">
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+      
+        
+          
+          
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/publication_preview/mind-the-error-480.webp 480w,/assets/img/publication_preview/mind-the-error-800.webp 800w,/assets/img/publication_preview/mind-the-error-1400.webp 1400w," sizes="200px" type="image/webp">
+    
+    <img src="/assets/img/publication_preview/mind-the-error.jpg" class="preview z-depth-1 rounded" width="100%" height="auto" alt="mind-the-error.jpg" data-zoomable loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </source></picture>
 
   
+</figure>
 
+        
+      
+    </div>
   
 
+  <!-- Entry bib key -->
+  <div id="taioli2024mind" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Mind the error! detection and localization of instruction errors in vision-and-language navigation</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      Francesco
+            Taioli, <em>Stefano
+            Rosa</em>, Alberto
+            Castellini
+        , and
+        <span class="more-authors" title="click to view 5 more authors" onclick="
+              var element = $(this);
+              element.attr('title', '');
+              var more_authors_text = element.text() == '5 more authors' ? 'Lorenzo Natale, Alessio Del Bue, Alessandro Farinelli, Marco Cristani, Yiming Wang' : '5 more authors';
+              var cursorPosition = 0;
+              var textAdder = setInterval(function(){
+                element.html(more_authors_text.substring(0, cursorPosition + 1));
+                if (++cursorPosition == more_authors_text.length){
+                  clearInterval(textAdder);
+                }
+            }, '10');
+          ">5 more authors</span>
+      
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>IROS 2024</em>,  2024
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+        <a href="http://arxiv.org/abs/2403.10700" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      
+      
+      
+      
+      
+      
+      
+      
+        <a href="https://github.com/intelligolabs/R2RIE-CE" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+      
+      
+      
+      
+        <a href="https://intelligolabs.github.io/R2RIE-CE/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>We propose a benchmark that introduces instruction errors in VLN datasets and a baseline method for detection and localization of errors.</p>
+      </div>
+    
+
+    
+
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
   
+    <div class="col col-sm-2 abbr">
+      
+        
+          
+          
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/publication_preview/I2EDL-480.webp 480w,/assets/img/publication_preview/I2EDL-800.webp 800w,/assets/img/publication_preview/I2EDL-1400.webp 1400w," sizes="200px" type="image/webp">
+    
+    <img src="/assets/img/publication_preview/I2EDL.jpg" class="preview z-depth-1 rounded" width="100%" height="auto" alt="I2EDL.jpg" data-zoomable loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </source></picture>
+
+  
+</figure>
+
+        
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="taioli2024i2edl" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">I2EDL: Interactive Instruction Error Detection and Localization</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      Francesco
+            Taioli, <em>Stefano
+            Rosa</em>, Alberto
+            Castellini
+        , and
+        <span class="more-authors" title="click to view 5 more authors" onclick="
+              var element = $(this);
+              element.attr('title', '');
+              var more_authors_text = element.text() == '5 more authors' ? 'Lorenzo Natale, Alessio Del Bue, Alessandro Farinelli, Marco Cristani, Yiming Wang' : '5 more authors';
+              var cursorPosition = 0;
+              var textAdder = setInterval(function(){
+                element.html(more_authors_text.substring(0, cursorPosition + 1));
+                if (++cursorPosition == more_authors_text.length){
+                  clearInterval(textAdder);
+                }
+            }, '10');
+          ">5 more authors</span>
+      
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>RO-MAN, 2024</em>,  2024
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+        <a href="http://arxiv.org/abs/2406.05080" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>We extend IEDL to programmatically interact with the user, balancing interactions and success rate increase.</p>
+      </div>
+    
+
+    
+
+    
+  </div>
+</div>
+</li>
+</ol>
+    </div>
+  
+
   
 </div>
 
@@ -615,8 +688,6 @@ Content 2
     
 
     
-  <script src="/assets/js/tabs.min.js?b8748955e1076bbe0dabcf28f2549fdc"></script>
-
 
     
   <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script>

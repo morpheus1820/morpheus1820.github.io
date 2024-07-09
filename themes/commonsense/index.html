@@ -17,12 +17,13 @@
   
   
     
-      MACP4Log | Stefano Rosa
+      Common Sense Understanding | Stefano Rosa
     
   
 </title>
 <meta name="author" content="Stefano Rosa">
-<meta name="description" content="Mobile, autonomous and cooperating robotic platforms for supervision and monitoring of large logistic surfaces">
+<meta name="description" content="Stefano Rosa's webpage
+">
 
 
 
@@ -58,7 +59,7 @@
   <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A4%96&lt;/text&gt;&lt;/svg&gt;">
 
 <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
-<link rel="canonical" href="http://0.0.0.0:8080/projects/MACP4LOG/">
+<link rel="canonical" href="http://0.0.0.0:8080/themes/commonsense/">
 
 <!-- Dark Mode -->
 <script src="/assets/js/theme.js?9a0c749ec5240d9cda97bc72359a72c0"></script>
@@ -150,11 +151,9 @@
             
               
                 
-                <li class="nav-item active">
+                <li class="nav-item ">
                   
                   <a class="nav-link" href="/projects/">projects
-                    
-                      <span class="sr-only">(current)</span>
                     
                   </a>
                 </li>
@@ -228,52 +227,77 @@
       
         <div class="post">
   <header class="post-header">
-    <h1 class="post-title">MACP4Log</h1>
-    <p class="post-description">Mobile, autonomous and cooperating robotic platforms for supervision and monitoring of large logistic surfaces</p>
+    <h1 class="post-title">Common Sense Understanding</h1>
+    <p class="post-description"></p>
   </header>
 
   <article>
-    <p><a class="citation" href="#abrate2013multirobot">(Abrate et al., 2013)</a>
-<a class="citation" href="#carlone2012graph">(Carlone et al., 2012)</a>
-<a class="citation" href="#abrate2010map">(Abrate et al., 2010)</a>
-<a class="citation" href="#macchia2010application">(Macchia et al., 2010)</a>
-<a class="citation" href="#abrate2010multi">(Abrate et al., 2010)</a>
-<a class="citation" href="#brevi2009hybrid">(Brevi et al., 2009)</a>
-<a class="citation" href="#abrate2009three">(Abrate et al., 2009)</a>
-<a class="citation" href="#abrate2008switching">(Abrate et al., 2008)</a></p>
+    <p>My research tries to bring common sense understanding to robotic perception. 
+Interacting with the environment requires to perceive objects and understand how actions influence their movement ad shape.</p>
+
+<p>Generative perception models can make sense of partial and noisy observations and reconstruct their shape and semantics
+<a class="citation" href="#hu2021learning">(Hu et al., 2021)</a>, <a class="citation" href="#hu2020randla">(Hu et al., 2020)</a>, <a class="citation" href="#yang2018dense">(Yang et al., 2018)</a>,
+.</p>
+
+<p>Understanding the intuitive physics of interacting with objects will provide 
+next-generation automonous agents with a common sense knowledge base for interacting with a complex, dynamic environment
+<a class="citation" href="#wang2018learning">(Wang et al., 2018)</a>, <a class="citation" href="#wang20183d">(Wang et al., 2018)</a>, <a class="citation" href="#wang2018defo">(Wang et al., 2018)</a>
+.</p>
 
   </article>
 
   
     <h2>References</h2>
     <div class="publications">
-      <h2 class="bibliography">2013</h2>
+      <h2 class="bibliography">2021</h2>
 <ol class="bibliography"><li>
 <div class="row">
   
     <div class="col col-sm-2 abbr">
       
+        
+          
+          
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/publication_preview/randlanet-tpami-480.webp 480w,/assets/img/publication_preview/randlanet-tpami-800.webp 800w,/assets/img/publication_preview/randlanet-tpami-1400.webp 1400w," sizes="200px" type="image/webp">
+    
+    <img src="/assets/img/publication_preview/randlanet-tpami.jpg" class="preview z-depth-1 rounded" width="100%" height="auto" alt="randlanet-tpami.jpg" data-zoomable loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </source></picture>
+
+  
+</figure>
+
+        
+      
     </div>
   
 
   <!-- Entry bib key -->
-  <div id="abrate2013multirobot" class="col-sm-8">
+  <div id="hu2021learning" class="col-sm-8">
     <!-- Title -->
-    <div class="title">Multirobot localization in highly symmetrical environments</div>
+    <div class="title">Learning semantic segmentation of large-scale point clouds with random sampling</div>
     <!-- Author -->
     <div class="author">
       
 
       
-      Fabrizio
-            Abrate, Basilio
-            Bona, Marina
-            Indri
+      Qingyong
+            Hu, Bo
+            Yang, Linhai
+            Xie
         , and
-        <span class="more-authors" title="click to view 2 more authors" onclick="
+        <span class="more-authors" title="click to view 5 more authors" onclick="
               var element = $(this);
               element.attr('title', '');
-              var more_authors_text = element.text() == '2 more authors' ? 'Stefano Rosa, Federico Tibaldi' : '2 more authors';
+              var more_authors_text = element.text() == '5 more authors' ? 'Stefano Rosa, Yulan Guo, Zhihua Wang, Niki Trigoni, Andrew Markham' : '5 more authors';
               var cursorPosition = 0;
               var textAdder = setInterval(function(){
                 element.html(more_authors_text.substring(0, cursorPosition + 1));
@@ -281,7 +305,7 @@
                   clearInterval(textAdder);
                 }
             }, '10');
-          ">2 more authors</span>
+          ">5 more authors</span>
       
       
     </div>
@@ -298,7 +322,7 @@
     
     
     <div class="periodical">
-      <em>Journal of Intelligent &amp; Robotic Systems</em>,  2013
+      <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>,  2021
     </div>
     <div class="periodical">
       
@@ -311,6 +335,10 @@
       
       
       
+      
+        
+          <a href="https://ieeexplore.ieee.org/document/9440696" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+        
       
       
       
@@ -342,33 +370,55 @@
   </div>
 </div>
 </li></ol>
-<h2 class="bibliography">2012</h2>
+<h2 class="bibliography">2020</h2>
 <ol class="bibliography"><li>
 <div class="row">
   
     <div class="col col-sm-2 abbr">
       
+        
+          
+          
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/publication_preview/randlanet-480.webp 480w,/assets/img/publication_preview/randlanet-800.webp 800w,/assets/img/publication_preview/randlanet-1400.webp 1400w," sizes="200px" type="image/webp">
+    
+    <img src="/assets/img/publication_preview/randlanet.gif" class="preview z-depth-1 rounded" width="100%" height="auto" alt="randlanet.gif" data-zoomable loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </source></picture>
+
+  
+</figure>
+
+        
+      
     </div>
   
 
   <!-- Entry bib key -->
-  <div id="carlone2012graph" class="col-sm-8">
+  <div id="hu2020randla" class="col-sm-8">
     <!-- Title -->
-    <div class="title">Graph optimization with unstructured covariance: fast, accurate, linear approximation</div>
+    <div class="title">Randla-net: Efficient semantic segmentation of large-scale point clouds</div>
     <!-- Author -->
     <div class="author">
       
 
       
-      Luca
-            Carlone, Jingchun
-            Yin, <em>Stefano
-            Rosa</em>
+      Qingyong
+            Hu, Bo
+            Yang, Linhai
+            Xie
         , and
-        <span class="more-authors" title="click to view 1 more author" onclick="
+        <span class="more-authors" title="click to view 5 more authors" onclick="
               var element = $(this);
               element.attr('title', '');
-              var more_authors_text = element.text() == '1 more author' ? 'Zehui Yuan' : '1 more author';
+              var more_authors_text = element.text() == '5 more authors' ? 'Stefano Rosa, Yulan Guo, Zhihua Wang, Niki Trigoni, Andrew Markham' : '5 more authors';
               var cursorPosition = 0;
               var textAdder = setInterval(function(){
                 element.html(more_authors_text.substring(0, cursorPosition + 1));
@@ -376,7 +426,7 @@
                   clearInterval(textAdder);
                 }
             }, '10');
-          ">1 more author</span>
+          ">5 more authors</span>
       
       
     </div>
@@ -393,7 +443,7 @@
     
     
     <div class="periodical">
-      <em>Simulation, Modeling, and Programming for Autonomous Robots</em>,  2012
+      <em>In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition</em> ,  2020
     </div>
     <div class="periodical">
       
@@ -403,13 +453,23 @@
     <div class="links">
       
       
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
       
       
       
       
       
+        
+          <a href="https://arxiv.org/abs/1911.11236" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+        
       
       
+      
+        <a href="https://youtu.be/Ar3eY_lwzMk" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Video</a>
+      
+      
+      
+        <a href="https://github.com/QingyongHu/RandLA-Net" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
       
       
       
@@ -429,6 +489,11 @@
 
     
 
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>We show that random sampling combined with attention can achieve SOA performances in semantic segmentation while processing large point clouds in near real-time.</p>
+      </div>
     
 
     
@@ -437,34 +502,56 @@
   </div>
 </div>
 </li></ol>
-<h2 class="bibliography">2010</h2>
+<h2 class="bibliography">2018</h2>
 <ol class="bibliography">
 <li>
 <div class="row">
   
     <div class="col col-sm-2 abbr">
       
+        
+          
+          
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/publication_preview/3d-dense-tpami-480.webp 480w,/assets/img/publication_preview/3d-dense-tpami-800.webp 800w,/assets/img/publication_preview/3d-dense-tpami-1400.webp 1400w," sizes="200px" type="image/webp">
+    
+    <img src="/assets/img/publication_preview/3d-dense-tpami.jpg" class="preview z-depth-1 rounded" width="100%" height="auto" alt="3d-dense-tpami.jpg" data-zoomable loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </source></picture>
+
+  
+</figure>
+
+        
+      
     </div>
   
 
   <!-- Entry bib key -->
-  <div id="abrate2010map" class="col-sm-8">
+  <div id="yang2018dense" class="col-sm-8">
     <!-- Title -->
-    <div class="title">Map updating in dynamic environments</div>
+    <div class="title">Dense 3D object reconstruction from a single depth view</div>
     <!-- Author -->
     <div class="author">
       
 
       
-      Fabrizio
-            Abrate, Basilio
-            Bona, Marina
-            Indri
+      Bo
+            Yang, <em>Stefano
+            Rosa</em>, Andrew
+            Markham
         , and
         <span class="more-authors" title="click to view 2 more authors" onclick="
               var element = $(this);
               element.attr('title', '');
-              var more_authors_text = element.text() == '2 more authors' ? 'Stefano Rosa, Federico Tibaldi' : '2 more authors';
+              var more_authors_text = element.text() == '2 more authors' ? 'Niki Trigoni, Hongkai Wen' : '2 more authors';
               var cursorPosition = 0;
               var textAdder = setInterval(function(){
                 element.html(more_authors_text.substring(0, cursorPosition + 1));
@@ -489,7 +576,122 @@
     
     
     <div class="periodical">
-      <em>In ISR 2010 (41st International Symposium on Robotics) and ROBOTIK 2010 (6th German Conference on Robotics)</em> ,  2010
+      <em>IEEE transactions on pattern analysis and machine intelligence</em>,  2018
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+      
+      
+      
+        
+          <a href="http://www.cs.ox.ac.uk/files/10813/Selective_Sensor_Fusion_Chen.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+        
+      
+      
+      
+      
+      
+      
+      
+      
+        <a href="https://changhaoc.github.io/selective_sensor_fusion/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>We propose an end-to-end approach to high-resolution reconstruction of 3D objects from a single depth image. We also release a real-world dataset for 3D reconstruction. We argue that real-world benchmarks for shape reconstruction are necessary for a thorough validation of future approaches.</p>
+      </div>
+    
+
+    
+
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+      
+        
+          
+          
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/publication_preview/intphys-neurips-480.webp 480w,/assets/img/publication_preview/intphys-neurips-800.webp 800w,/assets/img/publication_preview/intphys-neurips-1400.webp 1400w," sizes="200px" type="image/webp">
+    
+    <img src="/assets/img/publication_preview/intphys-neurips.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="intphys-neurips.png" data-zoomable loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </source></picture>
+
+  
+</figure>
+
+        
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="wang2018learning" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Learning the intuitive physics of non-rigid object deformations</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      Zhihua
+            Wang, <em>Stefano
+            Rosa</em>, and Andrew
+            Markham
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>In Neural Information Processing Systems (NIPS) Workshops</em> ,  2018
     </div>
     <div class="periodical">
       
@@ -502,6 +704,10 @@
       
       
       
+      
+        
+          <a href="http://phys2018.csail.mit.edu/papers/32.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+        
       
       
       
@@ -538,27 +744,49 @@
   
     <div class="col col-sm-2 abbr">
       
+        
+          
+          
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/publication_preview/3dphysnet-480.webp 480w,/assets/img/publication_preview/3dphysnet-800.webp 800w,/assets/img/publication_preview/3dphysnet-1400.webp 1400w," sizes="200px" type="image/webp">
+    
+    <img src="/assets/img/publication_preview/3dphysnet.gif" class="preview z-depth-1 rounded" width="100%" height="auto" alt="3dphysnet.gif" data-zoomable loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </source></picture>
+
+  
+</figure>
+
+        
+      
     </div>
   
 
   <!-- Entry bib key -->
-  <div id="macchia2010application" class="col-sm-8">
+  <div id="wang20183d" class="col-sm-8">
     <!-- Title -->
-    <div class="title">An Application of Omnidirectional Vision to Grid-based SLAM in Indoor Environments</div>
+    <div class="title">3d-physnet: Learning the intuitive physics of non-rigid object deformations</div>
     <!-- Author -->
     <div class="author">
       
 
       
-      Vito
-            Macchia, <em>Stefano
-            Rosa</em>, Luca
-            Carlone
+      Zhihua
+            Wang, <em>Stefano
+            Rosa</em>, Bo
+            Yang
         , and
-        <span class="more-authors" title="click to view 1 more author" onclick="
+        <span class="more-authors" title="click to view 3 more authors" onclick="
               var element = $(this);
               element.attr('title', '');
-              var more_authors_text = element.text() == '1 more author' ? 'Basilio Bona' : '1 more author';
+              var more_authors_text = element.text() == '3 more authors' ? 'Sen Wang, Niki Trigoni, Andrew Markham' : '3 more authors';
               var cursorPosition = 0;
               var textAdder = setInterval(function(){
                 element.html(more_authors_text.substring(0, cursorPosition + 1));
@@ -566,7 +794,7 @@
                   clearInterval(textAdder);
                 }
             }, '10');
-          ">1 more author</span>
+          ">3 more authors</span>
       
       
     </div>
@@ -583,7 +811,7 @@
     
     
     <div class="periodical">
-      <em>In Workshop on Omnidirectional Robot Vision, International Conference on Robotics and Automation (ICRA 2010)</em> ,  2010
+      <em>arXiv preprint arXiv:1805.00328</em>,  2018
     </div>
     <div class="periodical">
       
@@ -593,6 +821,10 @@
     <div class="links">
       
       
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+        <a href="http://arxiv.org/abs/1805.00328" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
       
       
       
@@ -600,6 +832,8 @@
       
       
       
+      
+        <a href="https://github.com/vividda/3D-PhysNet" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
       
       
       
@@ -619,6 +853,11 @@
 
     
 
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>We show that conditioning a generative model that predicts soft object deformations on real physical properties can improve prediction accuracy as well as enabling generalisation abilities.</p>
+      </div>
     
 
     
@@ -632,124 +871,49 @@
   
     <div class="col col-sm-2 abbr">
       
-    </div>
+        
+          
+          
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/publication_preview/defonet-480.webp 480w,/assets/img/publication_preview/defonet-800.webp 800w,/assets/img/publication_preview/defonet-1400.webp 1400w," sizes="200px" type="image/webp">
+    
+    <img src="/assets/img/publication_preview/defonet.jpg" class="preview z-depth-1 rounded" width="100%" height="auto" alt="defonet.jpg" data-zoomable loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </source></picture>
+
   
+</figure>
 
-  <!-- Entry bib key -->
-  <div id="abrate2010multi" class="col-sm-8">
-    <!-- Title -->
-    <div class="title">Multi-robot map updating in dynamic environments</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      Fabrizio
-            Abrate, Basilio
-            Bona, Marina
-            Indri
-        , and
-        <span class="more-authors" title="click to view 2 more authors" onclick="
-              var element = $(this);
-              element.attr('title', '');
-              var more_authors_text = element.text() == '2 more authors' ? 'Stefano Rosa, Federico Tibaldi' : '2 more authors';
-              var cursorPosition = 0;
-              var textAdder = setInterval(function(){
-                element.html(more_authors_text.substring(0, cursorPosition + 1));
-                if (++cursorPosition == more_authors_text.length){
-                  clearInterval(textAdder);
-                }
-            }, '10');
-          ">2 more authors</span>
-      
-      
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      <em>In 10th International Symposium on Distributed Autonomous Robotics Systems</em> ,  2010
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-      
-      
-
-      
-      
-
-      
-      
-      
-    
-
-    
-
-    
-
-    
-
-    
-  </div>
-</div>
-</li>
-</ol>
-<h2 class="bibliography">2009</h2>
-<ol class="bibliography">
-<li>
-<div class="row">
-  
-    <div class="col col-sm-2 abbr">
+        
       
     </div>
   
 
   <!-- Entry bib key -->
-  <div id="brevi2009hybrid" class="col-sm-8">
+  <div id="wang2018defo" class="col-sm-8">
     <!-- Title -->
-    <div class="title">Hybrid localization solutions for robotic logistic applications</div>
+    <div class="title">Defo-Net: Learning body deformation using generative adversarial networks</div>
     <!-- Author -->
     <div class="author">
       
 
       
-      Daniele
-            Brevi, Francesco
-            Fileppo, Riccardo
-            Scopigno
+      Zhihua
+            Wang, <em>Stefano
+            Rosa</em>, Linhai
+            Xie
         , and
         <span class="more-authors" title="click to view 4 more authors" onclick="
               var element = $(this);
               element.attr('title', '');
-              var more_authors_text = element.text() == '4 more authors' ? 'Fabrizio Abrate, Basilio Bona, Stefano Rosa, Federico Tibaldi' : '4 more authors';
+              var more_authors_text = element.text() == '4 more authors' ? 'Bo Yang, Sen Wang, Niki Trigoni, Andrew Markham' : '4 more authors';
               var cursorPosition = 0;
               var textAdder = setInterval(function(){
                 element.html(more_authors_text.substring(0, cursorPosition + 1));
@@ -774,7 +938,7 @@
     
     
     <div class="periodical">
-      <em>In 2009 IEEE International Conference on Technologies for Practical Robot Applications</em> ,  2009
+      <em>In 2018 IEEE International Conference on Robotics and Automation (ICRA)</em> ,  2018
     </div>
     <div class="periodical">
       
@@ -784,107 +948,21 @@
     <div class="links">
       
       
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+        <a href="http://arxiv.org/abs/1804.05928" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
       
       
       
       
       
       
+        <a href="https://www.youtube.com/watch?v=noG5DDX3coQ" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Video</a>
       
       
       
-      
-      
-    </div>
-    
-      
-      
-
-      
-      
-
-      
-      
-      
-    
-
-    
-
-    
-
-    
-
-    
-  </div>
-</div>
-</li>
-<li>
-<div class="row">
-  
-    <div class="col col-sm-2 abbr">
-      
-    </div>
-  
-
-  <!-- Entry bib key -->
-  <div id="abrate2009three" class="col-sm-8">
-    <!-- Title -->
-    <div class="title">Three-State Multirobot Collaborative Localization in Symmetrical Environments</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      Fabrizio
-            Abrate, Basilio
-            Bona, Marina
-            Indri
-        , and
-        <span class="more-authors" title="click to view 2 more authors" onclick="
-              var element = $(this);
-              element.attr('title', '');
-              var more_authors_text = element.text() == '2 more authors' ? 'Stefano Rosa, Federico Tibaldi' : '2 more authors';
-              var cursorPosition = 0;
-              var textAdder = setInterval(function(){
-                element.html(more_authors_text.substring(0, cursorPosition + 1));
-                if (++cursorPosition == more_authors_text.length){
-                  clearInterval(textAdder);
-                }
-            }, '10');
-          ">2 more authors</span>
-      
-      
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      <em>In ROBOTICA 2009</em> ,  2009
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-      
-      
-      
-      
-      
-      
-      
-      
+        <a href="https://github.com/vividda/Defo-net" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
       
       
       
@@ -904,6 +982,11 @@
 
     
 
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>We show that conditioning a generative model that predicts soft object deformations on real physical properties can improve prediction accuracy as well as enabling generalisation abilities.</p>
+      </div>
     
 
     
@@ -913,101 +996,6 @@
 </div>
 </li>
 </ol>
-<h2 class="bibliography">2008</h2>
-<ol class="bibliography"><li>
-<div class="row">
-  
-    <div class="col col-sm-2 abbr">
-      
-    </div>
-  
-
-  <!-- Entry bib key -->
-  <div id="abrate2008switching" class="col-sm-8">
-    <!-- Title -->
-    <div class="title">Switching multirobot collaborative localization in symmetrical environments</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      Fabrizio
-            Abrate, Basilio
-            Bona, Marina
-            Indri
-        , and
-        <span class="more-authors" title="click to view 2 more authors" onclick="
-              var element = $(this);
-              element.attr('title', '');
-              var more_authors_text = element.text() == '2 more authors' ? 'Stefano Rosa, Federico Tibaldi' : '2 more authors';
-              var cursorPosition = 0;
-              var textAdder = setInterval(function(){
-                element.html(more_authors_text.substring(0, cursorPosition + 1));
-                if (++cursorPosition == more_authors_text.length){
-                  clearInterval(textAdder);
-                }
-            }, '10');
-          ">2 more authors</span>
-      
-      
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      <em>In IEEE International Conference on Intelligent RObots Systems (IROS 2008), 2nd Workshop on Planning, Perception and Navigation for Intelligent Vehicles (PPNIV)</em> ,  2008
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-      
-      
-
-      
-      
-
-      
-      
-      
-    
-
-    
-
-    
-
-    
-
-    
-  </div>
-</div>
-</li></ol>
     </div>
   
 
