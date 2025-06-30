@@ -3,6 +3,8 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
+  - hsp-iit/embodied-captioning
+  - IIT-PAVIS/Look_Around_And_Learn
   - hsp-iit/tour-guide-robot
   - QingyongHu/RandLA-Net
   - morpheus1820/Q-PSO
